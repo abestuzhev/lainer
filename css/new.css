@@ -1,0 +1,112 @@
+/*new.css*/
+
+/*start in index.html 456 line*/
+.filter-floor--room {
+	margin-right: 30px;
+}
+
+.f-f-checkbox--room {
+	display: none;
+}
+
+.f-f-label--room {
+	display: inline-block;
+	width: 50px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	background-color: #1f5e94;
+	color: #fff;
+	cursor: pointer;
+	font-family: 'DINPro', sans-serif;
+	font-weight: 700;
+}
+
+.f-f-checkbox--room:checked + .f-f-label--room {
+	background-color: #f9af3e;
+	color: #222;
+}
+
+/*f-f-checkbox--skin2*/
+.f-f-checkbox--skin2 {
+	display: none;
+}
+
+.f-f-label--skin2 {
+	width: 90px;
+	font-size: 13px;
+	color:#fff;
+	padding-left: 48px;
+	padding-top: 4px;
+	position: relative;
+	display: inline-block;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.f-f-label--skin2::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 36px;
+	height: 36px;
+	background-color: #1f5e94;
+}
+
+.f-f-checkbox--skin2:checked + .f-f-label--skin2::after {
+	content: '';
+	position: absolute;
+	background: url(../images/icons.png) no-repeat 0 -648px;
+    width: 23px;
+    height: 13px;
+    left: 8px;
+    top: 10px;
+}
+
+/*new media*/
+
+@media screen and (max-width: 1130px){
+	.filter-left {
+		padding-top: 23px;
+		position: relative;
+	}
+
+	.filter-body__title {
+		position: absolute;
+		left: 0; top: 0;
+		padding-left: 3px;
+	}
+}
+
+@media screen and (max-width: 1130px) and (min-width:846px) {
+
+	.filter-types {
+		width: 220px;
+		display: block;
+		margin-bottom: 12px;
+	}
+}
+
+@media screen and (max-width: 846px){
+	.filter-left {
+		border-right-color: transparent !important;
+		margin-bottom: 20px;
+	}
+
+	.filter-right {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 1130px) and (min-width: 650px){
+	.filter-body {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.filter-body {
+		margin-top: 10px;
+	}
+}
