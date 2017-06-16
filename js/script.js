@@ -161,31 +161,21 @@ $(document).ready(function(){
         $(this).addClass('selected');
 
         var filterItems = $('.filter-item');
-        filterItems.css('display', 'none');
-        $('.filter-item_first').css('margin-bottom', '32px');
+        // filterItems.css('display', 'none');
+        // $('.filter-item_first').css('margin-bottom', '32px');
 
         if($(this).index() == 0) {
-            filterItems.css({'display': 'inline-block', 'width': '49%', 'margin-bottom':'0'});
-            $('.filter-right').css({'display':'none', 'width': 'auto'});
-            $('.filter-item_second .filter-left').css({
-                'border-right-color': 'transparent'
-            });
-        } else if($(this).index() == 1) {
-            $('.filter-item_first').css({'display': 'block', 'margin-bottom': '0','width':'100%'});
-            $('.filter-right').css({
-                'display': 'inline-block',
-                'width': 'auto'
-            });
-        } else  {
-            $('.filter-item_second').css({'display':'block', 'width':'100%'});
+            filterItems.removeClass('filter-item--active');
 
-            $('.filter-right').css({
-                'display': 'inline-block',
-                'width': 'auto'
-            });
-            $('.filter-item_second .filter-left').css({
-                'border-right-color': '#ffffff'
-            });
+        } else if($(this).index() == 1) {
+            //.filter-item_first
+            $('.filter-item_second').removeClass('filter-item--active');
+            $('.filter-item_first').addClass('filter-item--active');
+
+        } else  {
+            //.filter-item_second
+            $('.filter-item_first').removeClass('filter-item--active');
+            $('.filter-item_second').addClass('filter-item--active');
         }
     });
 
@@ -287,6 +277,17 @@ $(document).ready(function(){
     } else {
         $('.a-s-control, .a-s__prev, .a-s__next').css('display', 'none');
     }
+
+//    table sort active
+    $('.floor-table th').on('click', function(){
+        if($(this).hasClass('sort-active')){
+            $(this).children('i').toggleClass('icon-down');
+        }else{
+            $(this).siblings().removeClass('sort-active');
+            $(this).children('i').removeClass('icon-down');
+            $(this).toggleClass('sort-active');
+        }
+    });
 });
 
 function initMap() {
@@ -415,6 +416,8 @@ function initMap() {
         map: contMap,
         icon: markerMetro6
     });
+
+
 }
 
 initMap();

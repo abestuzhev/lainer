@@ -13,9 +13,10 @@
 	display: inline-block;
 	width: 50px;
 	height: 35px;
+	font-size: 16px;
 	text-align: center;
 	line-height: 35px;
-	background-color: #1f5e94;
+	background-color: #1e5688;
 	color: #fff;
 	cursor: pointer;
 	font-family: 'DINPro', sans-serif;
@@ -51,7 +52,7 @@
 	top: 0;
 	width: 36px;
 	height: 36px;
-	background-color: #1f5e94;
+	background-color: #1e5688;
 }
 
 .f-f-checkbox--skin2:checked + .f-f-label--skin2::after {
@@ -64,7 +65,14 @@
     top: 10px;
 }
 
+
 /*new media*/
+
+@media screen and (max-width: 1160px){
+	.filter-item_second {
+		padding-left: 8px;
+	}
+}
 
 @media screen and (max-width: 1130px){
 	.filter-left {
@@ -87,6 +95,12 @@
 		margin-bottom: 12px;
 	}
 }
+@media screen and (max-width: 920px) {
+	.f-f-label--room,
+	.f-f-label--skin2::before {
+		background: #6f53b2;
+	}
+}
 
 @media screen and (max-width: 846px){
 	.filter-left {
@@ -105,6 +119,12 @@
 	}
 }
 
+@media screen and (max-width: 650px){
+	.filter-item_second {
+		padding-left: 8px;
+	}
+
+}
 @media screen and (max-width: 480px){
 	.filter-body {
 		margin-top: 10px;
