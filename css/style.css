@@ -2301,9 +2301,20 @@ button, input, textarea, .box {
     height: 12px;
     background: url('../images/icons.png') no-repeat 0 -1232px;
 }
+.p-g-slides li {
+    position: relative;
+}
+
 .p-g-slides li img {
     width: 100%;
 }
+
+/*new 17-06-2017*/
+.popup-gallery .bx-wrapper, .popup-gallery .bx-viewport {max-height: 80vh !important;}
+@media screen and (max-height: 770px){
+  .popup-gallery .bx-wrapper, .popup-gallery .bx-viewport {max-height: 70vh !important;}
+}
+/*, .bx-wrapper img*/
 .popup-app, .popup-calc {
     margin-top: 120px;
     max-width: 393px;
