@@ -130,3 +130,19 @@
 		margin-top: 10px;
 	}
 }
+
+.filter-item--disabled {
+	position: relative;
+}
+
+.filter-item--disabled::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: .5;
+	z-index: 99999;
+}
