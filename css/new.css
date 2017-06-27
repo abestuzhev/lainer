@@ -146,3 +146,45 @@
 	opacity: .5;
 	z-index: 99999;
 }
+
+
+/*new fotogallery*/
+.gallery-slider {
+	width: 100%;
+	max-width: 100%;
+}
+
+.gallery-slide {
+	width: 650px !important;
+}
+
+.lg-toolbar .lg-close::after {
+	content: "\e070";
+	padding: 5px;
+	border-radius: 50px;
+	background-color: #f9af3e;
+}
+
+.lg-actions .lg-next:before,
+.lg-actions .lg-prev:after {
+	content: '';
+}
+
+.lg-actions .lg-prev,
+.lg-actions .lg-next {
+	opacity: .5;
+	width: 13px;
+	height: 24px;
+}
+
+.lg-actions .lg-next {
+	background: url(../images/icons.png) no-repeat 0 -98px;
+}
+.lg-actions .lg-prev {
+	background: url(../images/icons.png) no-repeat 0 -72px;
+}
+
+.lg-actions .lg-prev:hover,
+.lg-actions .lg-next:hover {
+	opacity: 1;
+}

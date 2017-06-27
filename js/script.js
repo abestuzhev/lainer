@@ -1,10 +1,17 @@
 /**
  * Created by Alexey on 15.05.2017.
  */
-
+// lightGallery(document.querySelector('.anchor-tag'),{selector: '.item'});
+// lightGallery(document.querySelector('.anchor-tag-2'));
+$(document).ready(function(){
+    $('#selector1').lightGallery({
+        selector: '.item'
+    });
+});
 $(document).ready(function(){
     $("input[name=phone]").mask("+7 (999) 999-99-99");
-    
+
+
     $('.m-s-slides').bxSlider({
         pagerCustom: '.m-s-control',
         nextSelector: '.m-s__next',
@@ -38,19 +45,19 @@ $(document).ready(function(){
         }
     });
 
-    $('.gallery-slides').bxSlider({
-        pagerCustom: '.gallery-control',
-        nextSelector: '.g-s__next',
-        prevSelector: '.g-s__prev',
-        nextText: ' ',
-        prevText: ' ',
-        minSlides: 3,
-        maxSlides: 3,
-        moveSlides: 1,
-        onSliderLoad: function () {
-            $(".gallery .bx-pager.bx-default-pager").remove();
-        }
-    });
+    // $('.gallery-slides').bxSlider({
+    //     pagerCustom: '.gallery-control',
+    //     nextSelector: '.g-s__next',
+    //     prevSelector: '.g-s__prev',
+    //     nextText: ' ',
+    //     prevText: ' ',
+    //     minSlides: 3,
+    //     maxSlides: 3,
+    //     moveSlides: 1,
+    //     onSliderLoad: function () {
+    //         $(".gallery .bx-pager.bx-default-pager").remove();
+    //     }
+    // });
 
     $('.menu__link').on('click', function(){
         $('.menu__btn').removeClass('open');
@@ -84,7 +91,7 @@ $(document).ready(function(){
 
     popupOpen('.header__app-link, .header__app-btn', '.popup-app');
     popupOpen('.hypothec-item__btn', '.popup-calc');
-    popupOpen('.g-s__photo', '.popup-gallery');
+    // popupOpen('.g-s__photo', '.popup-gallery');
     popupOpen('.f-t__scheme-link', '');
 
     $('.popup').on('click', function(e){
