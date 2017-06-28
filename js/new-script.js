@@ -12,11 +12,6 @@ $(document).ready(function(){
         mouseDrag: false,
         nav:true,
         navText: ['<span class="g-s__prev"></span>','<span class="g-s__next"></span>'],
-        margin:10,
-        responsive:{
-            600:{
-                items:2
-            }
-        }
+        margin:10
     });
 });

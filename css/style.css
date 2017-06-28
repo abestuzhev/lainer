@@ -1750,7 +1750,7 @@ button, input, textarea, .box {
     position: relative;
 }
 .gallery-slider {
-    max-width: 658px;
+    max-width: 650px;
     margin: 0 auto;
 }
 .gallery-slide {
@@ -3118,6 +3118,7 @@ button, input, textarea, .box {
     }
     .gallery-slide {
         width: 400px !important;
+        margin-right: 0;
     }
     .gallery-slider {
         max-width: 400px;

@@ -1,13 +1,6 @@
 /**
  * Created by Alexey on 15.05.2017.
  */
-// lightGallery(document.querySelector('.anchor-tag'),{selector: '.item'});
-// lightGallery(document.querySelector('.anchor-tag-2'));
-$(document).ready(function(){
-    $('#selector1').lightGallery({
-        selector: '.item'
-    });
-});
 $(document).ready(function(){
     $("input[name=phone]").mask("+7 (999) 999-99-99");
 
