@@ -233,3 +233,9 @@
 		border: none;
 	}
 }
+
+.advantage-desc,
+.f-b-form__btn,
+.choice-types {
+	cursor: pointer;
+}

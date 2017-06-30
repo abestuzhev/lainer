@@ -729,3 +729,4 @@ function deleteAllFilter()
     $('.choice-type').eq(0).addClass('selected');
     $('.filter-floor input').prop('checked', false);
 }
+
