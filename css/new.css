@@ -142,9 +142,8 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #000;
 	opacity: .5;
-	z-index: 99999;
+	z-index: 99;
 }
 
 
@@ -205,5 +204,32 @@
 @media screen and (min-width: 900px){
 	.owl-carousel .owl-dots.disabled {
 		display: none;
+	}
+}
+
+/*30.06.2017*/
+.scroll-top {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.scroll-top.cd-is-visible, .scroll-top.cd-fade-out, .no-touch .scroll-top:hover {
+	transition: opacity .3s 0s, visibility 0s 0s; }
+.scroll-top.cd-is-visible {
+	visibility: visible;
+	opacity: 1; }
+.scroll-top.cd-fade-out {
+	opacity: 1; }
+.no-touch .scroll-top:hover {
+	background-color: white;
+	opacity: 1; }
+
+.advantage-desc {
+	cursor: pointer;
+}
+
+@media all and (max-width: 650px) {
+	.filter-item_first {
+		border: none;
 	}
 }

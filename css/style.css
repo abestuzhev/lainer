@@ -2003,6 +2003,7 @@ button, input, textarea, .box {
     width: 43px;
     background: none;
     position: relative;
+    cursor: pointer;
 }
 .f-b-form__label {
     margin-right: 10px;
@@ -2454,6 +2455,7 @@ button, input, textarea, .box {
 .p-s-map {
     margin-top: 14px;
     padding-left: 13px;
+    display: none;
 }
 .p-s-map__item {
     margin-right: 27px;
@@ -2475,7 +2477,7 @@ button, input, textarea, .box {
     margin: -4px auto 41px;
 }
 .popup-scheme .popup-form__btn {
-    margin-top: 43px;
+    margin-top: 20px;
 }
 .popup-scheme .popup-form__field {
     height: 59px;
@@ -2871,6 +2873,7 @@ button, input, textarea, .box {
     }
     .choice-types {
         position: relative;
+        cursor: pointer;
     }
     .open .choice-types__selected {
         border-radius: 3px 3px 0 0;
